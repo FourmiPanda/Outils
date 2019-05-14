@@ -13,4 +13,4 @@ buildNumber.properties
 
 # IJ
 .DS_Store
-.idea
+.idea/
