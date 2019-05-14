@@ -1,1 +1,9 @@
 language: java
+notifications:
+  email:
+    recipients:
+      - paul.bavazzano@gmail.com
+      - elkhantache.ismael@gmail.com
+      - ceuterickx.gaetan@gmail.com
+    on_success: change
+    on_failure: change
