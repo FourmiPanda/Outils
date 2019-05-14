@@ -5,5 +5,5 @@ notifications:
       - paul.bavazzano@gmail.com
       - elkhantache.ismael@gmail.com
       - ceuterickx.gaetan@gmail.com
-    on_success: change
-    on_failure: change
+    on_success: always
+    on_failure: always
