@@ -7,3 +7,15 @@ notifications:
       - ceuterickx.gaetan@gmail.com
     on_success: always
     on_failure: always
+addons:
+  sonarcloud:
+    organization: "fourmipanda-github" # the key of the org you chose at step #3
+    token:
+      secure: "8473b8ed15f3db6449365b6847ba171b50b6d720" # encrypted value of your token
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - mvn sonar:sonar \
+    -Dsonar.projectKey=FourmiPanda_Outils \
+    -Dsonar.organization=fourmipanda-github \
+    -Dsonar.host.url=https://sonarcloud.io \
+    -Dsonar.login=8473b8ed15f3db6449365b6847ba171b50b6d720
